@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './App.css';
 
 class App extends React.Component {
   constructor() {
@@ -10,13 +10,13 @@ class App extends React.Component {
     };
   }
   render() {
-    const fruits = ['mango', 'apple', 'orange', 'pineapple', 'jackfruit'];
-    console.log(this.state.input);
+    // const fruits = ['mango', 'apple', 'orange', 'pineapple', 'jackfruit'];
+    // console.log(this.state.input);
     return (
       <>
         <textarea
           value={this.state.input}
-          onChange={(e) => this.setState({ input: e.target.value })}
+           onChange={(e) => this.setState({ input: e.target.value })}
         />
         <br />
         <button
@@ -29,10 +29,10 @@ class App extends React.Component {
           Display in uppercase
         </button>
         {this.state.showParagraph && <p>{this.state.input.toUpperCase()}</p>}
-        <p>My favorite fruits are:</p>
+        {/* <p>My favorite fruits are:</p>
         {fruits.map((fruit) => {
           return <p key={fruit}>{fruit}</p>;
-        })}
+        })} */}
       </>
     );
   }
