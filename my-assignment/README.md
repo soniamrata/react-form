@@ -72,5 +72,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-question:
-Create a page with a textarea, where a user writes their introduction/bio in mixed case. There will be a button on click of which the bio will change to upper case and show on a paragraph element below the textarea.
+
+
+question 
+Simple Counter
+
+Summary: 
+ 
+You will build a simple React App which increments/decrements count on-screen when buttons are clicked using React State.
+
+Topics covered: React class-based components, props, state.

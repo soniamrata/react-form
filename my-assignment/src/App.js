@@ -1,43 +1,70 @@
-import React from 'react';
-import './App.css';
+// import React from "react";
+// import "./App.css";
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      input: '',
-      showParagraph: false,
-    };
-  }
-  render() {
-    // const fruits = ['mango', 'apple', 'orange', 'pineapple', 'jackfruit'];
-    // console.log(this.state.input);
-    return (
-      <>
-        <textarea
-          value={this.state.input}
-           onChange={(e) => this.setState({ input: e.target.value })}
-        />
-        <br />
-        <button
-          onClick={() => {
-            this.setState({
-              showParagraph: !this.state.showParagraph,
-            });
-          }}
-        >
-          Display in uppercase
-        </button>
-        {this.state.showParagraph && <p>{this.state.input.toUpperCase()}</p>}
-        {/* <p>My favorite fruits are:</p>
-        {fruits.map((fruit) => {
-          return <p key={fruit}>{fruit}</p>;
-        })} */}
-      </>
-    );
-  }
-}     
-      
   
+// class App extends React.Component{
+//   constructor(){
+//       super();
+//       this.state ={
+//           Count:0
+//       }
+//   }
+//   increaseCount(){
+//     this.setState({
+//       Count: this.state.Count +1
+//     })
+//   }
+//   decreaseCount(){
+//     this.setState({
+//       Count: this.state.Count -1
+//     })
+//   }
 
-export default App;
+// render() {
+//   return(
+//     <div className="ABC">
+//       <h1>Assigment</h1>
+//     <p> Count = {this.state.Count} </p>
+//     <button onClick={
+//       ()=>{
+//         this.increaseCount();
+//       }
+//     }>+ Increase</button>
+//     <button onClick={
+//       () =>{
+//         this.decreaseCount()
+//       }
+//     }>- Decrease</button>
+    
+
+//     </div>
+//   )
+// }
+// }
+
+
+// export default App
+
+import React, { useState } from "react"
+// import './productPage.css'
+
+
+const ProductPage = () => {
+
+    const [count, setCount] = useState(0)
+
+    return <div >
+        
+        <h3> Products </h3>
+        
+        <p>Count = {count} </p>
+
+        <div className="aalu">
+            <button onClick={() => setCount(count + 1)}>Increment</button>
+            <button onClick={() => setCount(count - 1)}>Decrement</button>
+        </div>
+
+    </div>
+}
+
+export default ProductPage
