@@ -75,10 +75,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 question 
-Simple Counter
 
-Summary: 
- 
-You will build a simple React App which increments/decrements count on-screen when buttons are clicked using React State.
+third project frontend part
 
-Topics covered: React class-based components, props, state.
+
